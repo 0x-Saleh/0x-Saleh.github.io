@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <title>0xSaleh temporary skull mark</title>
+  <!-- Broad skull, worn crown, and a small cluster of organic growth. -->
+  <path fill="#18D6C3" d="M12 9C11 6 8 5 6 5c1 3 3 4 6 4Zm2 0C12 5 13 2 15 1c1 3 1 5-1 8Zm2 0c0-4 3-6 6-6-1 3-3 5-6 6Z"/>
+  <path fill="#18D6C3" d="M16 7C9 7 5 12 5 18v3l4 3 1 5h12l1-5 4-3v-3c0-5-3-9-7-10l-2 4-2-1 1-4Z"/>
+  <g fill="#101418">
+    <path d="M8 16c2-2 5-1 6 1l-1 4-4-1Zm16 0c-2-2-5-1-6 1l1 4 4-1Zm-8 4-2 4h4Z"/>
+    <path d="M12 26h2v3h-2Zm6 0h2v3h-2Z"/>
+  </g>
+</svg>
