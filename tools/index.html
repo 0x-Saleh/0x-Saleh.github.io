@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
   <title>Tools | 0xSaleh</title>
-  <meta name="description" content="Explore planned cybersecurity tools and command generators from 0xSaleh. The FFUF Command Generator is coming soon.">
+  <meta name="description" content="Explore cybersecurity tools from 0xSaleh. Use the FFUF Command Generator to configure HTTP requests, wordlists, filters and recursion locally.">
   <link rel="canonical" href="https://0x-saleh.github.io/tools/">
   <meta property="og:url" content="https://0x-saleh.github.io/tools/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="0xSaleh">
   <meta property="og:title" content="Tools | 0xSaleh">
-  <meta property="og:description" content="Explore planned cybersecurity tools and command generators from 0xSaleh. The FFUF Command Generator is coming soon.">
+  <meta property="og:description" content="Explore cybersecurity tools from 0xSaleh. Use the FFUF Command Generator to configure HTTP requests, wordlists, filters and recursion locally.">
   <script src="../assets/js/theme.js"></script>
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/style.css?v=ffuf-2">
   <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
 </head>
 <body>
@@ -32,14 +32,13 @@
   </header>
   <main id="main" class="container" tabindex="-1">
     <header class="page-intro"><h1>Tools</h1><p>Practical tools for cybersecurity.</p></header>
-    <div class="page-content tool-grid"><article class="tool-card">
-          <div class="card-top"><svg class="icon tool-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5-6 7 6 7m8-14 6 7-6 7m-3-17-2 20"/></svg><span class="status">Coming Soon</span></div>
-          <h2>FFUF Command Generator</h2>
-          <p>A planned tool for building FFUF commands from your selected inputs.</p>
-        </article></div>
+    <div class="page-content tool-grid"><a class="tool-card ffuf-card" href="ffuf/">
+          <img class="ffuf-artwork" src="imgs/ffuf-generator-card.webp" alt="Turquoise skull-faced FFUF cowboy with four arms and a western hat" width="1024" height="1024" loading="lazy" decoding="async">
+          <div><h2>FFUF Command Generator</h2><p>Build commands for HTTP fuzzing with wordlists, filters and request options.</p><span class="tool-card-action">Open generator</span></div>
+        </a></div>
   </main>
   <footer class="site-footer"><div class="container footer-inner">
-    <span class="footer-identity">0xSaleh</span>
+    <span class="footer-identity">Made By <a href="../about/">Saleh</a></span>
     <nav class="footer-nav" aria-label="Footer navigation">
         <a href="../">Home</a>
         <a href="../tools/">Tools</a>
