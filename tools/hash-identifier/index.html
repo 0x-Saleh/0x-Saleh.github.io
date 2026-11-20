@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="connect-src 'none'">
+  <meta name="color-scheme" content="dark">
+  <title>Hash Identifier - Identify Hash Types Online | 0xSaleh</title>
+  <meta name="description" content="Identify possible hash types in your browser. Recognize common formats including MD5, SHA, NTLM, bcrypt, and Argon2.">
+  <link rel="canonical" href="https://0x-saleh.github.io/tools/hash-identifier/">
+  <meta property="og:url" content="https://0x-saleh.github.io/tools/hash-identifier/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="0xSaleh">
+  <meta property="og:title" content="Hash Identifier - Identify Hash Types Online | 0xSaleh">
+  <meta property="og:description" content="Identify possible hash types in your browser. Recognize common formats including MD5, SHA, NTLM, bcrypt, and Argon2.">
+  <script src="../../assets/js/theme.js"></script>
+  <link rel="stylesheet" href="../../assets/css/style.css?v=subhunter-1">
+  <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/css/hash-identifier.css">
+  <script src="../../assets/js/hash-identifier.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../../" aria-label="0xSaleh home"><img class="brand-icon" src="../../assets/icons/favicon.svg" width="24" height="24" alt=""><span><span class="brand-prefix">0x</span>Saleh</span></a>
+      <nav aria-label="Main navigation"><ul class="nav-list">
+          <li><a href="../../">Home</a></li>
+          <li><a href="../../tools/">Tools</a></li>
+          <li><a href="../../blog/">Blog</a></li>
+          <li><a href="../../about/">About</a></li>
+      </ul></nav>
+      <div class="theme-slot"><button class="theme-toggle" type="button" aria-label="Switch to light theme" hidden><svg class="icon theme-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 3v1m0 16v1M3 12h1m16 0h1M5.6 5.6l.8.8m11.2 11.2.8.8M5.6 18.4l.8-.8M17.6 6.4l.8-.8"/></svg><svg class="icon theme-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 13.5A8.5 8.5 0 0 1 10.5 4 8.5 8.5 0 1 0 20 13.5Z"/></svg></button></div>
+    </div>
+  </header>
+  <main id="main" class="container" tabindex="-1">
+    <div class="hash-page">
+      <header class="page-intro hash-intro">
+        <h1>Hash Identifier</h1>
+        <img class="hash-artwork" src="../imgs/hash-identifier-card.webp" alt="" width="1254" height="1254" decoding="async">
+      </header>
+      <noscript><p>Enable JavaScript to identify hash formats in your browser.</p></noscript>
+      <section id="hash-tool" aria-label="Identify a hash" hidden>
+        <label class="hash-label" for="hash-input">Input</label>
+        <textarea id="hash-input" name="hash" rows="3" placeholder="Paste a hash…" spellcheck="false" autocapitalize="off" autocomplete="off" dir="ltr"></textarea>
+        <div class="hash-actions">
+          <button id="hash-clear" class="button" type="button" disabled>Clear</button>
+        </div>
+        <div class="hash-result" role="status" aria-atomic="true">
+          <h2 id="hash-result-title" hidden></h2>
+          <p id="hash-result-types" hidden></p>
+          <p id="hash-result-note"></p>
+        </div>
+      </section>
+      <section class="hash-about" aria-labelledby="hash-about-title">
+        <h2 id="hash-about-title">How identification works</h2>
+        <p>Hash types are identified by their format and length. Some hashes may have multiple possible matches.</p>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner">
+    <span class="footer-identity">Made By <a href="../../about/">Saleh</a></span>
+    <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="../../">Home</a>
+        <a href="../../tools/">Tools</a>
+        <a href="../../blog/">Blog</a>
+        <a href="../../about/">About</a>
+    </nav>
+  </div></footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+.qr-intro, .qr-result-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.qr-intro { padding-block: clamp(24px, 4vw, 44px) 20px; }
+.qr-intro h1, .qr-result-heading h2 { margin: 0; }
+.qr-artwork {
+  width: clamp(56px, 9vw, 96px);
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+#qr-reader, .qr-note { max-width: 760px; margin-inline: auto; }
+.qr-drop {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: 10px;
+  min-height: 180px;
+  padding: 16px;
+  border: 1px dashed var(--muted);
+  border-radius: var(--radius);
+  background: var(--surface);
+  text-align: center;
+}
+.qr-drop[data-dragging] { border-color: var(--accent); outline: 1px solid var(--accent); }
+.qr-drop p { margin: 0; color: var(--text); }
+.qr-drop .icon { color: var(--accent); width: 28px; height: 28px; }
+.qr-preview img { display: block; width: 72px; height: 56px; object-fit: contain; }
+.qr-browse { position: relative; cursor: pointer; }
+.qr-browse input { position: absolute; inset: 0; width: 100%; opacity: 0; cursor: pointer; }
+.qr-browse:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 4px; }
+.qr-status { min-height: 1.5em; margin: 8px 0; font-size: .875rem; }
+.qr-status[data-error] { color: #ffb4ad; }
+[data-theme="light"] .qr-status[data-error] { color: #a62823; }
+.qr-result-heading { flex-wrap: wrap; margin-bottom: 10px; }
+.qr-result-heading h2 { font-size: 1.15rem; }
+#qr-copy { min-height: 44px; padding: 6px 16px; cursor: pointer; }
+#qr-copy:disabled { background: transparent; color: var(--muted); border-color: var(--border); cursor: default; }
+#qr-output {
+  min-height: 64px;
+  max-height: 14rem;
+  margin: 0;
+  padding: 12px;
+  overflow: auto;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  font: 1rem/1.5 ui-monospace, Consolas, monospace;
+}
+.qr-note { margin-block: 14px 40px; font-size: .875rem; }

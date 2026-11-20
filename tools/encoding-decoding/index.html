@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Base64, Hex &amp; URL Encoder / Decoder | 0xSaleh</title>
+  <meta name="description" content="Encode and decode Base64, Hex, and URL-encoded text in your browser, with live results and one-click copying.">
+  <link rel="canonical" href="https://0x-saleh.github.io/tools/encoding-decoding/">
+  <meta property="og:url" content="https://0x-saleh.github.io/tools/encoding-decoding/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="0xSaleh">
+  <meta property="og:title" content="Base64, Hex &amp; URL Encoder / Decoder | 0xSaleh">
+  <meta property="og:description" content="Encode and decode Base64, Hex, and URL-encoded text in your browser, with live results and one-click copying.">
+  <script src="../../assets/js/theme.js"></script>
+  <link rel="stylesheet" href="../../assets/css/style.css?v=subhunter-1">
+  <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/css/encoding-decoding.css?v=3">
+  <script src="../../assets/js/encoding-decoding.js?v=2" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../../" aria-label="0xSaleh home"><img class="brand-icon" src="../../assets/icons/favicon.svg" width="24" height="24" alt=""><span><span class="brand-prefix">0x</span>Saleh</span></a>
+      <nav aria-label="Main navigation"><ul class="nav-list">
+          <li><a href="../../">Home</a></li>
+          <li><a href="../../tools/">Tools</a></li>
+          <li><a href="../../blog/">Blog</a></li>
+          <li><a href="../../about/">About</a></li>
+      </ul></nav>
+      <div class="theme-slot"><button class="theme-toggle" type="button" aria-label="Switch to light theme" hidden><svg class="icon theme-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 3v1m0 16v1M3 12h1m16 0h1M5.6 5.6l.8.8m11.2 11.2.8.8M5.6 18.4l.8-.8M17.6 6.4l.8-.8"/></svg><svg class="icon theme-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 13.5A8.5 8.5 0 0 1 10.5 4 8.5 8.5 0 1 0 20 13.5Z"/></svg></button></div>
+    </div>
+  </header>
+  <main id="main" class="container" tabindex="-1">
+    <header class="page-intro encoder-intro">
+      <div>
+        <h1>Encoding &amp; Decoding Tool</h1>
+        <p>Convert text between Base64, Hex, and URL encoding.</p>
+      </div>
+      <img src="../imgs/encoding-decoding-card.webp" alt="" width="1254" height="1254" decoding="async">
+    </header>
+    <noscript><p>Enable JavaScript to convert text locally in your browser.</p></noscript>
+    <section id="encoder" class="encoder" aria-label="Text converter" hidden>
+      <div class="encoder-controls">
+        <fieldset class="encoder-options">
+          <legend>Format</legend>
+          <div class="encoder-segments">
+            <label><input type="radio" name="encoding-format" value="Base64" checked><span>Base64</span></label>
+            <label><input type="radio" name="encoding-format" value="Hex"><span>Hex</span></label>
+            <label><input type="radio" name="encoding-format" value="URL"><span>URL</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="encoder-options">
+          <legend>Action</legend>
+          <div class="encoder-segments encoder-action-segments">
+            <label>
+              <input type="radio" name="encoding-action" value="encode" checked>
+              <span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Encode</span>
+            </label>
+            <label>
+              <input type="radio" name="encoding-action" value="decode">
+              <span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 7.75-1.4"/></svg>Decode</span>
+            </label>
+          </div>
+        </fieldset>
+      </div>
+      <div class="encoder-grid">
+        <div class="encoder-panel">
+          <div class="encoder-panel-heading">
+            <label for="encoding-input">Input</label>
+            <button id="encoding-clear" class="button" type="button">Clear</button>
+          </div>
+          <textarea id="encoding-input" name="input" rows="10" dir="auto" placeholder="Paste or type text…" spellcheck="false" autocapitalize="off" autocomplete="off" aria-describedby="encoding-error"></textarea>
+        </div>
+        <div class="encoder-panel">
+          <div class="encoder-panel-heading">
+            <label for="encoding-output">Output</label>
+            <button id="encoding-copy" class="button button-primary" type="button" disabled>Copy<span class="encoder-visually-hidden"> Output</span></button>
+          </div>
+          <textarea id="encoding-output" rows="10" dir="auto" readonly spellcheck="false"></textarea>
+          <div class="encoder-output-actions">
+            <button id="encoding-reuse" class="button" type="button" disabled>Use Output as Input</button>
+            <p id="encoding-error" role="status"></p>
+            <p id="encoding-status" role="status"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <p class="encoder-note">UTF-8 Support.</p>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner">
+    <span class="footer-identity">Made By <a href="../../about/">Saleh</a></span>
+    <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="../../">Home</a>
+        <a href="../../tools/">Tools</a>
+        <a href="../../blog/">Blog</a>
+        <a href="../../about/">About</a>
+    </nav>
+  </div></footer>
+</body>
+</html>

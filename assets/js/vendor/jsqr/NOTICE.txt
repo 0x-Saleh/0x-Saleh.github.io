@@ -1,0 +1,4 @@
+jsQR 1.4.0 by the jsQR contributors
+https://github.com/cozmo/jsQR
+Unmodified distribution build, licensed under Apache-2.0. See LICENSE.
+sha512-dxLob7q65Xg2DvstYkRpkYtmKm2sPJ9oFhrhmudT1dZvNFFTlroai3AWSpLey/w5vMcLBXRgOJsbXpdN9HzU/A==
